@@ -24,7 +24,7 @@ createStory = function (userId) {
     /**
      * Der Spieler soll einen Nahkampfschaden wirken (mit seinen Fäusten) und eine gewisse Gesundheit haben.
      */
-    player.addEffect(new Spielebuch.Effect('Mensch', [Rules.humanHealth, Rules.humanFistDamage]));
+    player.addEffect(new Spielebuch.Effect('Mensch', [Rules.humanHealth, Rules.humanFistDamage, Rules.noMoney]));
     /**
      * Wenn wir keinen Namen setzen, macht das der Zufallsgenerator, der Name des Helden ist aber unbekannt.
      */

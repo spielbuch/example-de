@@ -7,18 +7,28 @@
 </body>
 
 <template name="index">
-    <div class="container">
+    <div class="container main">
         {{>header}}
         <div class="row">
             <div class="col-md-12">
                 {{>readerText}}
                 {{>readerInteraction}}
                 {{>readerCountdown}}
-                <hr/>
+            </div>
+            <hr/>
+            <div class="col-md-12">
+                Schaden: {{readerPlayerDamage}} | Gesundheit: {{readerPlayerHitpoints}} | Rüstung: {{readerPlayerDefense}}
+            </div>
+            <hr/>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
                 {{>readerLog}}
             </div>
         </div>
-    </div>
+        </div>
     {{>footer}}
 </template>
 
@@ -37,9 +47,6 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                        Schaden: {{readerPlayerDamage}}, Gesundheit: {{readerPlayerHitpoints}}, Rüstung: {{readerPlayerDefense}}
-                </div>
                 <div class="col-md-6 text-small">
                     <!-- Das sollten sie löschen und ihre Daten eintragen. Ich bin kein Anwalt, möchte aber auf diese @#$! Impressumspflicht hinweisen, die wir in Deutschland haben. -->
                     <h4>Impressum:</h4>

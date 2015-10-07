@@ -1,0 +1,1 @@
+# spielebuch:example-de

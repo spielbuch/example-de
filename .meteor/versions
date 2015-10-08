@@ -69,8 +69,8 @@ session@1.1.1
 sha@1.0.4
 spacebars@1.0.7
 spacebars-compiler@1.0.7
-spielebuch:core@0.0.4
-spielebuch:ui@0.0.1
+spielebuch:core@0.0.7
+spielebuch:ui@0.0.5
 srp@1.0.4
 standard-minifiers@1.0.1
 templating@1.1.4

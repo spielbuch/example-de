@@ -1,5 +1,5 @@
 /**
- * Nun wir es  wir erstellen eine interaktive Story.
+ * Auf geht's, wir erstellen eine interaktive Story.
  * Ich verwende dazu das erste Kapitel aus dem Fantasyroman Mundir - Interregnum,
  * vielen Dank an den Autor, das er das erlaubt (sämtliche Rechte am Inhalt des Buches verbleiben selbstverständlich beim Autor).
  * Ich lasse einfach mal diesen Amazon Partnerlink zum Buch hier und bedanke mich für die Unterstützung ;)

@@ -10,6 +10,7 @@
     <div class="container main">
         {{>header}}
         <div class="row">
+            {{#if currentUser}}
             <div class="col-md-12">
                 {{>readerText}}
                 {{>readerInteraction}}
@@ -17,9 +18,23 @@
             </div>
             <hr/>
             <div class="col-md-12">
-                Schaden: {{readerPlayerDamage}} | Gesundheit: {{readerPlayerHitpoints}} | Rüstung: {{readerPlayerDefense}}
+                Schaden: {{readerPlayerDamage}} {{#if readerPlayerEquippedDamage}}{{readerPlayerEquippedDamage}}{{/if}} |
+                Gesundheit: {{readerPlayerHitpoints}} {{#if readerPlayerEquippedHitpoints}}{{readerPlayerEquippedHitpoints}}{{/if}} |
+                Rüstung: {{readerPlayerDefense}} {{#if readerPlayerEquippedDefense}}{{readerPlayerEquippedDefense}}{{/if}} |
+                Geld: {{readerEffectivePropertyByName 'Geld'}}
             </div>
             <hr/>
+            {{else}}
+            <div class="col-md-12">
+                <p>Um das Spielebuch zu nutzen, müssen Sie sich anmelden. Es wird nur Ihre E-Mailadresse und Ihr Passwort (mit bcrypt gehasht) gespeichert.</p>
+                <p>Da es sich hierbei um einen Prototyp handelt, können Ihre Daten zu jederzeit gelöscht werden.</p>
+                <p>Eigentümer der Serverinfrastruktur ist Meteor und wird Entwicklern freundlicher weise zur Verfügung gestellt. Die Datenschutzbedingungen von Meteor finden sie
+                    <a href="https://www.meteor.com/policy" target="_blank">hier</a>.
+                </p>
+                <p>Bei Feedback und Problemen erstellen Sie bitte ein Issue auf GitHub oder wenden Sie sich direkt per E-Mail an spielebuch@budick.eu.</p>
+                <p>Viel Spaß!</p>
+            </div>
+            {{/if}}
         </div>
     </div>
     <div class="container">
